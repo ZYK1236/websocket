@@ -111,10 +111,6 @@ module.exports = {
       template: './public/index.html'
     }),
     new SimpleProgressWebpackPlugin(),
-    new BundleAnalyzerPlugin({
-      analyzerPort: 3001,
-      generateStatsFile: false
-    }),
     new MiniCssExtractPlugin({
       filename: 'css/[name]_[chunkhash:5].css'
       // chunkFilename: 'css/[id].css'

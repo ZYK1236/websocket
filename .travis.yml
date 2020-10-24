@@ -8,5 +8,5 @@ before_install:
 script:
   - yarn build
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build -t xdzyk/websocket:latest
-  - docker push xdzyk/websocket:latest
+  - docker image build ./ -t xdzyk/webpack:latest
+  - docker image push xdzyk/webpack:latest
