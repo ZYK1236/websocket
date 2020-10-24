@@ -5,5 +5,5 @@ services:
   - docker
 script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker image build ./ -t xdzyk/websocket:latest .
+  - docker image build ./ -t xdzyk/websocket:latest
   - docker image push xdzyk/websocket:latest
