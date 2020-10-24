@@ -11,8 +11,8 @@ import {
   MessageOutlined,
   MailOutlined
 } from '@ant-design/icons'
-import alipay from './../../assets/img/alipay.jpg'
-import wechatPay from './../../assets/img/wechatPay.jpg'
+import alipay from '../../assets/img/alipay.jpg'
+import wechatPay from '../../assets/img/wechatPay.jpg'
 import { useHistory } from 'react-router-dom'
 import utilsDebounce from '../../utils/debounce'
 import { apiRegister, apiSendEmail, apiLogin } from '../../service/api/index'

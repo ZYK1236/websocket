@@ -33,6 +33,14 @@ module.exports = {
           }
         ]
       },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+          }
+        ]
+      },
       //  不对node_module中的css/less做module处理
       {
         test: /\.css$/,
