@@ -3,6 +3,8 @@ node_js:
   - "12"
 services:
   - docker
+before_install:
+  - yarn
 script:
   - yarn build
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
