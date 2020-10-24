@@ -1,0 +1,101 @@
+.loginWrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-image: url('https://static.zhihu.com/heifetz/assets/sign_bg.db29b0fb.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  // align-content: space-between;
+  background-color: #b8e5f8;
+
+  .title {
+    position: absolute;
+    top: 40px;
+    color: #0084ff;
+    display: block;
+    font-size: 40px;
+  }
+
+  .description {
+    position: absolute;
+    top: 90px;
+    color: grey;
+    display: block;
+    font-size: 20px;
+  }
+
+  .loginBox {
+    // height: 50%;
+    width: 25%;
+    padding: 12px;
+    // margin          : 0 auto;
+
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255);
+
+    .inputBox {
+      width: 80%;
+      margin: 0 auto;
+
+      .userInput,
+      .passwordInput {
+        margin: 15px 0px;
+        width: 100%;
+      }
+
+      .loginBtn {
+        width: 100%;
+        margin: 5px 0px;
+      }
+
+      .registerWarp {
+        position: relative;
+        .registerBtn {
+          width: 100%;
+          margin: 5px 0px 15px 0px;
+        }
+        .backRegisterBtn {
+          width: 80%;
+          margin: 5px 5% 15px 0px;
+        }
+        .backToBtn {
+          position: absolute;
+          right: 0px;
+          top: 10px;
+        }
+
+        .clearfix:after {
+          /*伪元素是行内元素 正常浏览器清除浮动方法*/
+          content: '';
+          display: block;
+          height: 0;
+          clear: both;
+          visibility: hidden;
+        }
+        .clearfix {
+          *zoom: 1; /*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+        }
+      }
+    }
+
+    .note {
+      margin-top: 10px;
+      color: grey;
+      font-size: 13px;
+    }
+
+    .reward {
+      float: right;
+      color: gray;
+    }
+  }
+}
+
+.alipayImg {
+  width: 300px;
+  height: 400px;
+}
