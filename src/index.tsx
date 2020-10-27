@@ -23,7 +23,7 @@ Sentry.init({
 
   // We recommend adjusting this value in production, or using tracesSampler
   // for finer control
-  tracesSampleRate: 0.7
+  tracesSampleRate: 1.0
 })
 
 renderRoot(App)
